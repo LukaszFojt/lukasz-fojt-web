@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Image = ({src, ...rest}) => {
   src = src && src.includes('https://') 
   ? src 

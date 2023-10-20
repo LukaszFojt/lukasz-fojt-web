@@ -145,26 +145,16 @@ app.post('/api/upload-by-link', async (req,res) => {
 });
 
 const photosMiddleware = multer({
-  dest: '/tmp',
-  limits: {
-    fileSize: 5 * 1024 * 1024,
-  },
+  dest: '/tmp'
 });
-// photosMiddleware.array('photos', 10
 
 app.post('/api/upload', photosMiddleware.array('photos', 10), async (req,res) => {
   mongoose.connect(process.env.MONGO_URL);
-  // console.log(req.files);
   const uploadedFiles = [];
   for (let i=0; i < req.files.length; i++) {
     const {path, originalname, mimetype} = req.files[i];
     const url = await uploadToS3(path, originalname, mimetype);
     uploadedFiles.push(url);
-    // const parts = originalname.split('.');
-    // const ext = parts[parts.length - 1];
-    // const newPath = path + '.' + ext;
-    // fs.renameSync(path, newPath);
-    // uploadedFiles.push(newPath.replace('uploads\\', ''));
   }
   res.json(uploadedFiles);
 });
