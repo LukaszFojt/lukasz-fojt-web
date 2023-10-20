@@ -28,34 +28,14 @@ const PlacePage = () => {
   return (
     <div className='mt-8 bg-blue-100 -mx-8 px-8 text-blue-700'>
       <h1 className='text-2xl'>{place.title}</h1>
-      <PlaceLink>{place.summary}</PlaceLink>
+      <div>{place.summary}</div>
       <PlacesGallery place={place} />
       <p className='my-4 font-light'>{place.content}</p>
       <div>
         {place.categories}
       </div>
-      <p className='my-4 font-light'>{place.tags}</p>
+      <p className='my-4 font-light'>Tags: {place.tags}</p>
         <div className='grid grid-cols-2'>
-        <div className='mx-auto flex flex-col gap-2'>
-          <h3 className='font-light'>Check in time: <span className='font-semibold'>
-            {place.checkIn}
-          </span></h3>
-          <h3 className='font-light'>Check out time: <span className='font-semibold'>
-            {place.checkOut}
-          </span></h3>
-          <h3 className='font-light'>Maximum number of guests: <span className='font-semibold'>
-            {place.maxGuests}
-          </span></h3>
-          <div    
-          className='font-light'>
-            Price: 
-            <span   
-              className='font-semibold'>
-              ${place.price} 
-            </span> / per night
-          </div>
-        </div>
-        <BookingWidget place={place}/>
       </div>
     </div>
   )

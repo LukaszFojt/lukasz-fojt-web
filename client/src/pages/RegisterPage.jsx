@@ -28,7 +28,7 @@ const RegisterPage = () => {
       <div className='mb-32'>
         <h1 className='text-4xl text-center mb-4'>Register</h1>
         <form     
-          className='max-w-md mx-auto'
+          className='max-w-md mx-auto text-black'
           onSubmit={registerUser}
         >
           <input

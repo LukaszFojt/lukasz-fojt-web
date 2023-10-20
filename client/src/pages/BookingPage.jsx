@@ -32,7 +32,7 @@ const BookingPage = () => {
     <div>
       <AccountNav />
       <h1 className='text-2xl my-8'>{booking.place.title}</h1>
-      <PlaceLink className='my-2 block'>{booking.place.summary}</PlaceLink>
+      <div className='my-2 block'>{booking.place.summary}</div>
       <div className="bg-gray-200 p-4 mb-4 rounded-2xl">
         <h2 className="text-xl">
           Your booking information: 

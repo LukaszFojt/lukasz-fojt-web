@@ -105,9 +105,10 @@ const PlacesFormPage = () => {
           {preInput('Photos','Add photos using link or from your device')}
           <PhotosUploader addedPhotos={addedPhotos} onChange={setAddedPhotos} />
           {preInput('Content','Main content of your post')}
-          <Editor 
+          <textarea 
+            className="text-black"
             value={content}
-            onChange={setContent}
+            onChange={ev => setContent(ev.target.value)}
           />
           {preInput('Category','Select categories of your post')}
           <Categories selected={categories} onChange={setCategories} />

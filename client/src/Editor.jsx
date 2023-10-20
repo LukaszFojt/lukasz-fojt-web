@@ -21,6 +21,7 @@ export default function Editor({value,onChange}) {
 
   return (
     <ReactQuill
+      className="bg-blue-100 text-black"
       value={value}
       theme={'snow'}
       onChange={onChange}

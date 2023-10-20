@@ -30,12 +30,12 @@ const PlacesPage = () => {
             Add new place
         </Link>
       </div>
-      <div className='mt-4'>
+      <div className='flex flex-col gap-5 mt-4'>
         {places.length > 0 && places.map(place => (
           <Link
             key={place._id}
             to={'/account/places/' +place._id}
-            className='text-blue-700 bg-blue-100 p-4 rounded-2xl flex gap-4 cursor-pointer'>
+            className='text-blue-700 bg-blue-100 p-4 rounded-2xl flex gap-2 cursor-pointer'>
             <div className='w-32 h-32 flex grow shrink-0'>
               <PlaceImg place={place} />
             </div>
