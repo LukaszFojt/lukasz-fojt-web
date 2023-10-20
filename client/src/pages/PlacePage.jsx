@@ -26,7 +26,7 @@ const PlacePage = () => {
   }
 
   return (
-    <div className='mt-8 bg-gray-100 -mx-8 px-8'>
+    <div className='mt-8 bg-blue-100 -mx-8 px-8 text-blue-700'>
       <h1 className='text-2xl'>{place.title}</h1>
       <PlaceLink>{place.summary}</PlaceLink>
       <PlacesGallery place={place} />

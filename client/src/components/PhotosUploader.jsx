@@ -51,6 +51,7 @@ const PhotosUploader = ({addedPhotos, onChange}) => {
     <>
       <div className='flex gap-2'>
         <input 
+          className='text-black'
           type='text' 
           placeholder={'Add using a link ...jpg'}
           value={photoLink}

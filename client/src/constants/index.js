@@ -104,7 +104,7 @@ export const footerLinks = [
     {
         name: "Website",
         icon: websiteIcon,
-        link: "https://lukasz-fojt.vercel.app/",
+        link: "https://lukasz-fojt-web.vercel.app/",
     },
     {
       name: "Mail",
@@ -252,7 +252,7 @@ export const projects = [
       ],
       image: spaceImg,
       link_to: "/projects/cosmos",
-      link_to_github: "https://github.com/",
+      link_to_github: "https://github.com/LukaszFojt",
     },
     {
       name: "Job IT",
@@ -274,7 +274,7 @@ export const projects = [
       ],
       image: spaceImg,
       link_to: "/projects/2",
-      link_to_github: "https://github.com/",
+      link_to_github: "https://github.com/LukaszFojt",
     },
     {
       name: "Scientific Website",
@@ -296,7 +296,7 @@ export const projects = [
       ],
       image: spaceImg,
       link_to: "/projects/cosmos",
-      link_to_github: "https://github.com/",
+      link_to_github: "https://github.com/LukaszFojt",
     },
   ];
 
@@ -307,7 +307,7 @@ export const projects = [
         "Github about our cosmos that allowes to browse amongst planets and see 3D Solar System in it's full glory.",
       image: spaceImg,
       link_to: "/articles/github-basics",
-      link_to_github: "https://github.com/",
+      link_to_github: "https://github.com/LukaszFojt",
     },
     {
       name: "Article2",
@@ -315,7 +315,7 @@ export const projects = [
         "Article info about application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       image: spaceImg,
       link_to: "/articles/2",
-      link_to_github: "https://github.com/",
+      link_to_github: "https://github.com/LukaszFojt",
     },
     {
       name: "Scientific Article",
@@ -323,7 +323,7 @@ export const projects = [
         "Website about our cosmos that allowes to browse amongst planets and see 3D Solar System in it's full glory.",
       image: spaceImg,
       link_to: "/articles/3",
-      link_to_github: "https://github.com/",
+      link_to_github: "https://github.com/LukaszFojt",
     },
   ];
 

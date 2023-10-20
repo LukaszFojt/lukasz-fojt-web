@@ -86,32 +86,34 @@ const PlacesFormPage = () => {
       <div>
         <AccountNav />
         <form onSubmit={savePlace}>
-          {preInput('Title', 'title')}
+          {preInput('Title', 'title for your post')}
           <input 
+            className="text-black"
             type='text'
-            placeholder='title, for example: My lovely apartment.'
+            placeholder='for example: "Github repository creation"'
             value={title}
             onChange={ev => setTitle(ev.target.value)}
           />
-          {preInput('Summary','summary')}
-          <input 
+          {preInput('Summary','Short summary of your post')}
+          <input
+            className="text-black" 
             type='text'
-            placeholder='summary'
+            placeholder='Write here a few lines of summary for your post'
             value={summary}
             onChange={ev => setSummary(ev.target.value)}
           />
-          {preInput('Photos','photos')}
+          {preInput('Photos','Add photos using link or from your device')}
           <PhotosUploader addedPhotos={addedPhotos} onChange={setAddedPhotos} />
-          {preInput('Content','content')}
+          {preInput('Content','Main content of your post')}
           <Editor 
             value={content}
-            onChange={setContent} 
+            onChange={setContent}
           />
-          {preInput('Category','category')}
+          {preInput('Category','Select categories of your post')}
           <Categories selected={categories} onChange={setCategories} />
-          {preInput('Tags','tags')}
+          {preInput('Tags','Add some tags for better placement')}
             <textarea     
-              className=''
+              className='text-black'
               value={tags}
               onChange={ev => setTags(ev.target.value)}
             />

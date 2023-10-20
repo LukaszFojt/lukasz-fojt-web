@@ -33,10 +33,6 @@ const IndexPage = () => {
               )}
               <h2 className="font-bold truncate">{place.summary}</h2>
               <h3 className="text-sm leading-3">{place.title}</h3>
-              <div>
-                <span className="font-bold">${place.price} </span>
-                per night
-              </div>
             </div>
           </Link>
         ))}

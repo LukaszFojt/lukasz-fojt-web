@@ -29,8 +29,7 @@ const ProjectCard = ({ index, name, content, image, link_to, link_to_github }) =
       initial="hidden"
       animate={control}
       ref={ref}>
-      <Link 
-        target="_blank"
+      <Link
         to={link_to}>
       <Tilt
         options={{
