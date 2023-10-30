@@ -19,8 +19,8 @@ const Categories = ({selected, onChange}) => {
           <input    
             type='checkbox'
             onChange={handleCbClick}
-            name='wifi'
-            checked={selected.includes('wifi')}
+            name='Web Dev '
+            checked={selected.includes('Web Dev ')}
           />
           <span>Web Development</span>
         </label>
@@ -28,8 +28,8 @@ const Categories = ({selected, onChange}) => {
           <input  
             type='checkbox'
             onChange={handleCbClick}
-            name='parking'
-            checked={selected.includes('parking')}
+            name='Game Dev '
+            checked={selected.includes('Game Dev ')}
           />
           <span>Game Development</span>
         </label>
@@ -37,8 +37,8 @@ const Categories = ({selected, onChange}) => {
           <input 
             type='checkbox'
             onChange={handleCbClick}
-            name='tv' 
-            checked={selected.includes('tv')}
+            name='3D Graphics ' 
+            checked={selected.includes('3D Graphics ')}
           />
           <span>3D Graphics</span>
         </label>
@@ -46,8 +46,8 @@ const Categories = ({selected, onChange}) => {
           <input 
             type='checkbox'
             onChange={handleCbClick}
-            name='pets'
-            checked={selected.includes('pets')}
+            name='Pixel Art '
+            checked={selected.includes('Pixel Art ')}
           />
           <span>Pixel Art</span>
         </label>
@@ -55,8 +55,8 @@ const Categories = ({selected, onChange}) => {
           <input 
             type='checkbox'
             onChange={handleCbClick}
-            name='entrance'
-            checked={selected.includes('entrance')}
+            name='C# Programming '
+            checked={selected.includes('C# Programming ')}
           />
           <span>C# Programming</span>
         </label>
@@ -64,8 +64,8 @@ const Categories = ({selected, onChange}) => {
           <input 
             type='checkbox'
             onChange={handleCbClick}
-            name='radio'
-            checked={selected.includes('radio')}
+            name='JS Programming '
+            checked={selected.includes('JS Programming ')}
           />
           <span>JS Programming</span>
         </label>

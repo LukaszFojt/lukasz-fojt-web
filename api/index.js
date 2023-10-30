@@ -23,11 +23,11 @@ const bucket = process.env.BUCKET;
 
 const { rateLimit } = require('express-rate-limit')
 const limiter = rateLimit({
-  windowMs: 3 * 60 * 1000,
-  limit: 10,
+  windowMs: 5 * 60 * 1000,
+  limit: 5,
   standardHeaders: 'draft-7',
   legacyHeaders: false,
-  message: "You have reached maximum number of requests. Please wait 3 minutes."
+  message: "You have reached maximum number of requests. Please wait 5 minutes."
 });
 
 app.use(express.json());
